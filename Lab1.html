@@ -13998,6 +13998,7 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>The normal distribution is a continuous distribution parametrized by its mean and standard deviation. It is defined on the whole real line and is symmetric about its mean. It is important primarily because of the central limit theorem, which states roughly that the mean of any sufficiently large collection of random variables will follow a normal distribution, regardless of the distributions of the individual variables (so long as they have finite means and variances). Since macroscopic observables often arise as the mean of many individual microscopic variables, the normal distribution appears frequently.</p>
 <p>The SciPy <code>sf</code> (survival function) command calculates the probability of finding a measurement above a given value, i.e. it calculates the integral from the given value to positive infinity. Some of these probabilities are tabulated below for a normal distribution at various sigma values.</p>
 
 </div>
@@ -14090,7 +14091,7 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>In this case, all the sigma values we got were non-negative because we only considered probabilities less than or equal to 0.5. Probabilities greater than 0.5 require us to "catch" more than half of the distribution, which, since the normal distribution is symmetric, require us to be left of the mean, i.e. to have a negative sigma value.</p>
+<p>In this case, all the sigma values we got were non-negative because we only considered probabilities less than or equal to 0.5. Probabilities greater than 0.5 require us to "catch" more than half of the distribution, which, since the normal distribution is symmetric and we're integrating to the right, require us to be left of the mean, i.e. to have a negative sigma value.</p>
 
 </div>
 </div>
@@ -14101,6 +14102,7 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>The Rayleigh distribution is a continuous distribution for non-negative values, parametrized by a single value s, sometimes called the scale. If the components of a random two-dimensional vector are normally distributed with mean 0 and standard deviation s, then the length of the vector will be Rayleigh distributed with scale s.</p>
 <p>Below we've plotted a a histogram of a population of 100,000 events following a Rayleigh distribution, as well as the corresponding ideal distribution function, on both a linear and log scale.</p>
 
 </div>
@@ -14220,7 +14222,8 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Finally, we consider the Poisson distribution. Below are histograms for randomly generated populations of 100,000 events following Poisson distributions with four different means, as well as plots of the corresponding ideal probability mass functions.</p>
+<p>The Poisson distribution is a discrete distribution on non-negative integers, parametrized by its mean. It describes the likelihood of observing a certain number of events in a fixed period of time assuming that the events occur independently at a constant mean rate.</p>
+<p>Below are histograms for randomly generated populations of 100,000 events following Poisson distributions with four different means, as well as plots of the corresponding ideal probability mass functions.</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
